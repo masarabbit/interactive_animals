@@ -18,22 +18,14 @@ body {
 
 .wrapper {
   position: absolute;
-  height: calc(100vh - 100px);
+  height: 100vh;
   width: 100%;
   top: 0;
 }
 
-.ground {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 150px;
-  background-color: rgb(255, 255, 255);
-}
-
 .cat-wrapper {
   position: absolute;
-  bottom: 40px;
+  bottom: 0;
 }
 
 .cat-wrapper * {
@@ -47,7 +39,7 @@ body {
 
 .cat {
   position: absolute;
-  bottom: calc(var(--m) * 16px);
+  bottom: calc(var(--m) * 14px);
   left: calc(var(--m) * 25px);
   transition: 1.5s;
   transform-origin: center;
@@ -112,7 +104,7 @@ body {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAMCAYAAACqYHctAAAAAXNSR0IArs4c6QAAADlJREFUKFNjZEAC/Ny6/0FcRpgYTAAuiCzw8etlRrBKmCBIAKwSXYAaglgtQhYEseFOQpeA+whZAgA13CUlKUDsBQAAAABJRU5ErkJggg==);
   --w: 5px;
   --h: 12px;
-  top: calc(var(--m) * -6px);
+  top: calc(var(--m) * -8px);
   transform-origin: bottom right;
   animation: tail-motion forwards 2s;
 }
