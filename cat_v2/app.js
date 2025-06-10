@@ -20,9 +20,10 @@ function init() {
       return this.el.getBoundingClientRect().x < pos.x
     },
     turn() {
-      this.el.style.left = `${pos.x + (this.turnRight ? -90 : 10)}px`
-      this.wrapper.classList[this.turnRight ? 'remove' : 'add']('face-left')
-      this.wrapper.classList[this.turnRight ? 'add' : 'remove']('face-right')
+      const { turnRight } = this
+      this.el.style.left = `${pos.x + (turnRight ? -90 : 10)}px`
+      this.wrapper.classList[turnRight ? 'remove' : 'add']('face-left')
+      this.wrapper.classList[turnRight ? 'add' : 'remove']('face-right')
     },
     jump() {
       this.wrapper.classList.remove('jump')
